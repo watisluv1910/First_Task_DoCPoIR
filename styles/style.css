@@ -1,0 +1,24 @@
+h1, h2, h3 {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-style: oblique;
+}
+
+.rainbow {
+    background: linear-gradient(to left, red, orange, yellow, green, cyan, blue, violet);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+h1 {
+    font-size: 40px;
+    line-height: 40px;
+}
+
+h2 {
+    color:chocolate;
+}
+
+h3 {
+    text-decoration: underline overline #FF3028;
+}

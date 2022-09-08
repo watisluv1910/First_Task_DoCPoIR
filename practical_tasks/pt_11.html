@@ -1,0 +1,96 @@
+<!DOCTYPE html> 
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE-edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Practical task num. 11</title>
+        <link rel="stylesheet" href="/styles/style_pt-11.css">
+    </head>
+    <body>
+        <main>
+            <article id="registration">
+                <h2>Please, fill the registration from.</h2>
+                <form action="https://httpbin.org/get" method="get" autocomplete="on">
+                    <fieldset>
+                        <legend>Personal Info</legend>
+                        <p>
+                            <label for="get-name">First name:</label>
+                            <input type="text" name="name" id="get-name" placeholder="Jane" autofocus required>
+                        </p>
+                        <p>
+                            <label for="get-lastname">Last name:</label>
+                            <input type="text" name="lastname" id="get-lastname" placeholder="Foster" required>
+                        </p>
+                        <p>
+                            <label for="get-email">Email:</label>
+                            <input type="email" name="email" id="get-email" placeholder="tim.cook@gmail.com" required>
+                        </p>
+                        <p>
+                            <label for="get-password">Password:</label>
+                            <input type="password" name="password" id="get-password" placeholder="Your secret" required>
+                        </p>
+                        <p>
+                            <label for="get-phone">Phone number:</label>
+                            <input type="tel" name="phone" id="get-phone" placeholder="8-800-555-35-35" pattern="[0-9]{1}-[0-9]{3}-[0-9]{3}-[0-9]{2}-[0-9]{2}">
+                        </p>
+                        <p>
+                            <label for="get-birthday">Birthday:</label>
+                            <input type="date" name="birthday" id="get-birthday" value="1999-12-31" min="1939-09-01" max="2021-12-31" required>
+                        </p>
+                    </fieldset>
+                    <br>
+                    <div class="dropdown">
+                        <button class="dropbtn">Add additional info</button><br><br>
+                        <div class="dropdown-content">
+                            <fieldset>
+                                <legend>What is your favourite food?</legend>
+                                <p>
+                                    <input type="radio" name="food" id="tacos" value="tacos">
+                                    <label for="tacos">Tacos</label>
+                                </p>
+                                <p>
+                                    <input type="radio" name="food" id="pizza" value="pizza">
+                                    <label for="pizza">Pizza</label>
+                                </p>
+                                <p>
+                                    <input type="radio" name="food" id="other" value="other">
+                                    <label for="other">Other</label>
+                                </p>
+                            </fieldset>
+                            <br>
+                            <fieldset>
+                                <legend>What pets do you have?</legend>
+                                <p>
+                                    <input type="checkbox" name="pets" id="dog" value="dog">
+                                    <label for="dog">Dog</label>
+                                </p>
+                                <p>
+                                    <input type="checkbox" name="pets" id="cat" value="cat">
+                                    <label for="cat">Cat</label>
+                                </p>
+                                <p>
+                                    <input type="checkbox" name="pets" id="otherPet" value="otherPet">
+                                    <label for="otherPet">Other</label>
+                                </p>
+                            </fieldset> 
+                            <br>
+                            <fieldset>
+                                <legend>Send your notes</legend>
+                                <label for="message">Your Message:</label>
+                                <br>
+                                <textarea name="message" id="message" cols="30" rows="10" placeholder="Type your message here"></textarea>
+                            </fieldset>
+                        </div>
+                    </div>                
+                    <br>
+                    <button type="submit" id="submit">
+                        <img src="/images/shaverma-favicon-512x512px.png" alt="shaurma" width="15" height="15">
+                        Submit
+                    </button>
+                    <button type="reset" id="reset">Reset</button>
+                </form>
+            </article>
+        </main>
+    </body>
+</html>

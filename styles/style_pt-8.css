@@ -1,0 +1,15 @@
+dialog {
+    border-radius: 20px;
+    background-color:bisque;
+}
+
+dialog::backdrop {
+    background-color: rgba(red 0, green 0, blue 0 , alpha 0.6);
+}
+
+#close {
+    position: relative;
+    display: block;
+    margin: auto;
+    padding: auto;
+}
