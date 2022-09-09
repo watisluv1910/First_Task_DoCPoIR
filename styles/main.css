@@ -1,0 +1,15 @@
+body {
+    text-align: center;
+}
+
+header {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+ul {
+    list-style-type: none;
+}
+
+li {
+    padding-bottom: 5px;
+}
