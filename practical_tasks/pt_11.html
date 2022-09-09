@@ -9,14 +9,18 @@
     </head>
     <body>
         <main>
-            <article id="registration">
+            <article id="registration"> <!-- Семантический тег -->
                 <h2>Please, fill the registration from.</h2>
-                <form action="https://httpbin.org/get" method="get" autocomplete="on">
-                    <fieldset>
-                        <legend>Personal Info</legend>
+                <form action="https://httpbin.org/get" method="get" autocomplete="on"> <!-- Форма -->
+                    <!-- Атрибут method=get определяет способ приёма информации формой -->
+                    <!-- Атрибут autocomplete=on позволяет браузеру предлагать варианты заполнения формы -->
+                    <fieldset> <!-- Группа полей формы -->
+                        <legend>Personal Info</legend> <!-- Название группы полей -->
                         <p>
-                            <label for="get-name">First name:</label>
-                            <input type="text" name="name" id="get-name" placeholder="Jane" autofocus required>
+                            <label for="get-name">First name:</label> <!-- Название поля формы (значение for должно совпадать с id формы)-->
+                            <input type="text" name="name" id="get-name" placeholder="Jane" autofocus required> <!-- Форма -->
+                            <!-- Атрибут required обеспечивает обязательность заполнения формы -->
+                            <!-- Атрибут autofocus переводит курсор на форму при загрузке страницы -->
                         </p>
                         <p>
                             <label for="get-lastname">Last name:</label>
@@ -79,16 +83,16 @@
                                 <legend>Send your notes</legend>
                                 <label for="message">Your Message:</label>
                                 <br>
-                                <textarea name="message" id="message" cols="30" rows="10" placeholder="Type your message here"></textarea>
+                                <textarea name="message" id="message" cols="30" rows="10" placeholder="Type your message here"></textarea> <!-- Зона для ввода текста -->
                             </fieldset>
                         </div>
                     </div>                
                     <br>
-                    <button type="submit" id="submit">
+                    <button type="submit" id="submit"> <!-- Кнопка отправки формы -->
                         <img src="/images/shaverma-favicon-512x512px.png" alt="shaurma" width="15" height="15">
                         Submit
                     </button>
-                    <button type="reset" id="reset">Reset</button>
+                    <button type="reset" id="reset">Reset</button> <!-- Кнопка сброса формы -->
                 </form>
             </article>
         </main>
